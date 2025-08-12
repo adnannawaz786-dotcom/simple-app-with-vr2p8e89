@@ -1,4 +1,3 @@
-```javascript
 // Todo utility functions and localStorage management
 import { v4 as uuidv4 } from 'uuid';
 
@@ -380,4 +379,3 @@ export const CATEGORY_COLORS = {
   learning: 'from-yellow-400 to-amber-400',
   projects: 'from-cyan-400 to-teal-400'
 };
-```
