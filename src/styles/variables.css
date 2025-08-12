@@ -1,0 +1,252 @@
+```css
+/* CSS Custom Properties for Glassmorphic Todo App */
+:root {
+  /* Primary Color Palette - Wild Vibrant Colors */
+  --color-primary-50: #fdf2ff;
+  --color-primary-100: #fae8ff;
+  --color-primary-200: #f5d0fe;
+  --color-primary-300: #f0abfc;
+  --color-primary-400: #e879f9;
+  --color-primary-500: #d946ef;
+  --color-primary-600: #c026d3;
+  --color-primary-700: #a21caf;
+  --color-primary-800: #86198f;
+  --color-primary-900: #701a75;
+
+  /* Secondary Color Palette - Electric Blue */
+  --color-secondary-50: #eff6ff;
+  --color-secondary-100: #dbeafe;
+  --color-secondary-200: #bfdbfe;
+  --color-secondary-300: #93c5fd;
+  --color-secondary-400: #60a5fa;
+  --color-secondary-500: #3b82f6;
+  --color-secondary-600: #2563eb;
+  --color-secondary-700: #1d4ed8;
+  --color-secondary-800: #1e40af;
+  --color-secondary-900: #1e3a8a;
+
+  /* Accent Colors - Neon Highlights */
+  --color-accent-cyan: #00ffff;
+  --color-accent-lime: #00ff00;
+  --color-accent-yellow: #ffff00;
+  --color-accent-orange: #ff6600;
+  --color-accent-pink: #ff1493;
+  --color-accent-purple: #9400d3;
+
+  /* Neutral Colors with Alpha for Glass Effects */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Glass Morphism Colors with Alpha */
+  --glass-white: rgba(255, 255, 255, 0.25);
+  --glass-white-light: rgba(255, 255, 255, 0.1);
+  --glass-white-strong: rgba(255, 255, 255, 0.4);
+  --glass-dark: rgba(0, 0, 0, 0.25);
+  --glass-dark-light: rgba(0, 0, 0, 0.1);
+  --glass-primary: rgba(217, 70, 239, 0.2);
+  --glass-secondary: rgba(59, 130, 246, 0.2);
+
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #06b6d4;
+
+  /* Background Gradients */
+  --bg-gradient-primary: linear-gradient(135deg, 
+    #667eea 0%, 
+    #764ba2 25%, 
+    #f093fb 50%, 
+    #f5576c 75%, 
+    #4facfe 100%);
+  
+  --bg-gradient-secondary: linear-gradient(45deg,
+    #ff0099 0%,
+    #493240 25%,
+    #00d4ff 50%,
+    #ff6b6b 75%,
+    #4ecdc4 100%);
+
+  --bg-gradient-dark: linear-gradient(135deg,
+    #667eea 0%,
+    #764ba2 25%,
+    #f093fb 50%,
+    #f5576c 75%,
+    #4facfe 100%);
+
+  /* Animated Gradient */
+  --bg-gradient-animated: linear-gradient(-45deg, 
+    #ee7752, 
+    #e73c7e, 
+    #23a6d5, 
+    #23d5ab, 
+    #f093fb, 
+    #f5576c);
+
+  /* Glass Card Backgrounds */
+  --glass-card-bg: rgba(255, 255, 255, 0.15);
+  --glass-card-border: rgba(255, 255, 255, 0.2);
+  --glass-card-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  --glass-card-hover-bg: rgba(255, 255, 255, 0.25);
+
+  /* Typography */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+  --shadow-glass: 0 8px 32px rgba(31, 38, 135, 0.37);
+  --shadow-neon: 0 0 20px rgba(217, 70, 239, 0.6);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* Z-Index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-toast: 1080;
+
+  /* Blur Effects */
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(16px);
+  --blur-xl: blur(24px);
+  --blur-2xl: blur(40px);
+  --blur-3xl: blur(64px);
+
+  /* Animation Durations */
+  --duration-75: 75ms;
+  --duration-100: 100ms;
+  --duration-150: 150ms;
+  --duration-200: 200ms;
+  --duration-300: 300ms;
+  --duration-500: 500ms;
+  --duration-700: 700ms;
+  --duration-1000: 1000ms;
+
+  /* Custom Properties for Glass Morphism */
+  --glass-backdrop-filter: blur(16px) saturate(180%);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.125);
+  --glass-border-hover: 1px solid rgba(255, 255, 255, 0.25);
+  
+  /* Button Specific Variables */
+  --btn-glass-bg: rgba(255, 255, 255, 0.1);
+  --btn-glass-hover-bg: rgba(255, 255, 255, 0.2);
+  --btn-glass-active-bg: rgba(255, 255, 255, 0.3);
+  
+  /* Input Specific Variables */
+  --input-glass-bg: rgba(255, 255, 255, 0.05);
+  --input-glass-focus-bg: rgba(255, 255, 255, 0.1);
+  --input-glass-border: rgba(255, 255, 255, 0.2);
+  --input-glass-focus-border: rgba(217, 70, 239, 0.5);
+
+  /* Todo Status Colors */
+  --todo-pending-color: var(--color-accent-yellow);
+  --todo-completed-color: var(--color-success);
+  --todo-priority-high: var(--color-error);
+  --todo-priority-medium: var(--color-warning);
+  --todo-priority-low: var(--color-info);
+
+  /* Responsive Breakpoints (for JS usage) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* Dark Theme Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --glass-card-bg: rgba(0, 0, 0, 0.25);
+    --glass-card-border: rgba(255, 255, 255, 0.1);
+    --glass-white: rgba(255, 255, 255, 0.1);
+    --glass-white-light: rgba(255, 255, 255, 0.05);
+    --glass-white-strong: rgba(255, 255, 255, 0.2);
+    
+    --input-glass-bg: rgba(0, 0, 0, 0.2);
+    --input-glass-focus-bg: rgba(0, 0, 0, 0.3);
+    --btn-glass-bg: rgba(0, 0, 0, 0.2);
+    --btn-glass-hover-bg: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* High Contrast Theme */
+@media (prefers-contrast: high) {
+  :root {
+    --glass-card-border: rgba(255, 255, 255, 0.5);
+    --glass-border: 2px solid rgba(255, 255, 255, 0.3);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-slow: 0ms;
+    --duration-75: 0ms;
+    --duration-100: 0ms;
+    --duration-150: 0ms;
+    --duration-200: 0ms;
+    --duration-300: 0ms;
+    --duration-500: 0ms;
+    --duration-700: 0ms;
+    --duration-1000: 0ms;
+  }
+}
+```
