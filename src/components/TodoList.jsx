@@ -1,4 +1,3 @@
-```jsx
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, X, Edit2, Star, Calendar, Clock, Trash2 } from 'lucide-react';
@@ -296,4 +295,3 @@ const TodoList = ({
 };
 
 export default TodoList;
-```
