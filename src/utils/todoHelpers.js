@@ -4,6 +4,9 @@ import { v4 as uuidv4 } from 'uuid';
 // Local storage key
 const TODOS_STORAGE_KEY = 'glassmorphic-todos';
 
+// Generate new unique ID
+export const generateId = () => uuidv4();
+
 // Default todo structure
 const createTodo = (text, category = 'general', priority = 'medium') => ({
   id: uuidv4(),
