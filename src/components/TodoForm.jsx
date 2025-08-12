@@ -1,4 +1,3 @@
-```jsx
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Edit3, X, Save, Calendar, Tag, AlertCircle } from 'lucide-react';
@@ -404,4 +403,3 @@ const TodoForm = ({
 };
 
 export default TodoForm;
-```
